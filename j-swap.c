@@ -17,12 +17,7 @@ void swap(stack_t **stack, unsigned int line_number)
 
 	}
 
-	temp = *stack;
-
-	*stack = (*stack)->next;
-
-	if (*stack != NULL)
-		(*stack)->prev =  NULL;
-
-	free(temp);
+	temp = (*stack)->n;
+(*stack)-> = (*stack)->next->;
+(*stack)->next->n = temp;
 }
