@@ -25,4 +25,7 @@ void nop(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 
+void read_bytecode_file(const char *file_path);
+void execute_pint(stack_t **stack, unsigned int line_number);
+int main(int argc, char *argv[]);
 #endif
